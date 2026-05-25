@@ -8,6 +8,10 @@
 // Git tools - Analysis
 import { gitChangelogAnalyzeTool } from './git-changelog-analyze.tool.js';
 
+// File tools
+import { fileReadTool } from './file-read.tool.js';
+import { fileWriteTool } from './file-write.tool.js';
+
 // Git tools - Core
 import { gitBlameTool } from './git-blame.tool.js';
 import { gitCleanTool } from './git-clean.tool.js';
@@ -50,6 +54,8 @@ import { gitWorktreeTool } from './git-worktree.tool.js';
  * Alphabetized by tool name for maintainability.
  */
 export const allToolDefinitions = [
+  fileReadTool,
+  fileWriteTool,  
   gitAddTool,
   gitBlameTool,
   gitBranchTool,
